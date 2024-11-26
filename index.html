@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vlogger Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="banner">
+            <img src="images/channels4_banner.jpg" alt="Travel Banner" class="banner-image">
+        </div>
+        <div class="profile">
+            <img src="images/ProfilePic.jpg" alt="Zane Sensenig" class="profile-picture">
+            <h1>Zane Sensenig</h1>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I’m Zane Sensenig! Traveling isn’t just something I do; it’s a big part of who I am. 
+            I love diving into new cultures, meeting incredible people, and creating memories that last a lifetime. 
+            Whether it’s wandering through vibrant cities, relaxing in quiet, scenic spots, or discovering unique local traditions, 
+            I’m all about embracing the adventure and sharing the magic of every journey. Let’s explore the world together!
+        </p>
+    </section>
+
+    
+
+    <!-- Interactive Travel Map -->
+    <section class="travel-map">
+        <h2>Click to explore with me</h2>
+        <div class="map-container">
+            <!-- Use the new image source -->
+            <img src="images/worldMap.jpg" alt="World Map" class="world-map">
+            
+            <!-- Travel locations with tooltip -->
+        
+            <a href="https://www.youtube.com/watch?v=x62m4G0gbKk&list=PLfKVb5B9JvRQskmd1zBfKWXLnGXSwLdVA&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Mumbai, India" style="top: 54.02%; left: 67.50%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=j6QJiO8kEYs&list=PLfKVb5B9JvRQmIQFm2FU3z1YhB2vq2WAL&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Kuala Lumpur, Malaysia" style="top: 57.00%; left: 73.75%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=8uQ_7sZ1zLI&list=PLfKVb5B9JvRQPnqbm5SmAz55cwagmnG3F&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Philadelphia, USA" style="top: 36.20%; left: 26.30%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Mcggugol2ts&list=PLfKVb5B9JvRT4DuYo4H0qClNx00XNkujB&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Tokyo, Japan" style="top: 39.70%; left: 82.97%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xHi_us9B2DY&list=PLfKVb5B9JvRSRZ68W7MBwozwtqAGsFhiB&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Seoul, South Korea" style="top: 40.62%; left: 79.72%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=KknNmrixt9Y&list=PLfKVb5B9JvRTDH6rrAGltXoq6RekIaVLR&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Hanoi, Vietnam" style="top: 46.50%; left: 74.90%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=xTZblAWYS4s&list=PLfKVb5B9JvRRpf25tV5vl7U3C-oxLQ0LA&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Bangkok, Thailand" style="top: 50.70%; left: 73.50%;"></div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=ArNGwLKSSp0&list=PLfKVb5B9JvRSIDdNmwpWQfITQ1-wr4bMq&ab_channel=ZaneTravel" target="_blank">
+                <div class="map-pin" data-tooltip="Manila, Philippines" style="top: 52.50%; left: 79.08%;"></div>
+            </a>
+            
+    </section>
+    
+    <section class="brand-collaboration">
+        <h2>Brand Collaborations</h2>
+        <p>Partner with me to bring your brand to an engaged, travel-loving audience! I offer a variety of collaboration options including sponsored content, product placements, and more. Let’s create something impactful together!</p>
+        
+        <h3>Why Partner with Me?</h3>
+        <p>With a dedicated audience across YouTube, Instagram, and TikTok, my content reaches thousands of active, enthusiastic travelers looking for new products and experiences. Here's a quick look at my audience and engagement metrics:</p>
+        
+        <div class="metrics-container">
+            <div class="metric">
+                <h4>YouTube Audience</h4>
+                <div class="graph" id="youtube-graph"></div> <!-- Fancy Graph Placeholder -->
+                <p>100k+ Subscribers, 50k Average Views per Video</p>
+            </div>
+    
+            <div class="metric">
+                <h4>Instagram Engagement</h4>
+                <div class="graph" id="instagram-graph"></div> <!-- Fancy Graph Placeholder -->
+                <p>30k+ Followers, 5% Engagement Rate</p>
+            </div>
+    
+            <div class="metric">
+                <h4>Audience Demographics</h4>
+                <div class="graph" id="demographics-graph"></div> <!-- Fancy Graph Placeholder -->
+                <p>18-35 Years Old, Primarily from US, UK, Canada, Australia</p>
+            </div>
+        </div>
+        
+        
+        <h3>Interested in Partnering?</h3>
+        <p>If you’re ready to collaborate and create something awesome, click the button below to reach out and get started!</p>
+        <button class="contact-button" onclick="document.getElementById('contact-form').style.display = 'block';">Reach Out</button>
+    
+        <!-- Contact Form Popup -->
+        <div id="contact-form" class="contact-form">
+            <h3>Contact Me for Brand Partnerships</h3>
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+            <button class="close-button" onclick="document.getElementById('contact-form').style.display = 'none';">Close</button>
+        </div>
+    </section>
+    
+
+    <section class="social-media">
+        <h2>Follow Me</h2>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@zanetravel" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/zane.jpegs/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@zanetravel" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

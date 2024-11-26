@@ -1,0 +1,323 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Hero Header Section */
+.hero {
+    position: relative;
+    height: 300px; /* Set height to the banner size */
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Profile Section */
+.profile {
+    position: absolute;
+    top: 50%; /* Center the profile vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile h1 {
+    margin: 15px 0 0;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.about-me {
+    padding: 3rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff9f1a;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 3rem;
+    display: inline-block;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1s infinite;
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply Random Delays to Each Icon */
+.social-icon.tiktok {
+    animation-delay: 0s; /* TikTok starts immediately */
+}
+
+.social-icon.instagram {
+    animation-delay: 0.2s; /* Instagram starts 0.2s later */
+}
+
+.social-icon.youtube {
+    animation-delay: 0.4s; /* YouTube starts 0.4s later */
+}
+
+/* Individual Social Media Icons */
+.tiktok {
+    color: #000;
+}
+
+.instagram {
+    color: #E4405F;
+}
+
+.youtube {
+    color: #FF0000;
+}
+/* Styling for the Brand Collaboration Section */
+.brand-collaboration {
+    padding: 3rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.brand-collaboration h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.metric {
+    width: 30%;
+}
+
+.metric h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.graph {
+    background-color: #f0f0f0;
+    height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Fancy Graph placeholder styles (you'll replace this with actual graph code) */
+.graph {
+    background-color: #ddd;
+}
+
+/* Contact Button and Form */
+.contact-button {
+    background-color: #ff9f1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #e68700;
+}
+
+/* Contact Form Popup Styling */
+.contact-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 400px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff9f1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form .close-button {
+    background-color: #e68700;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+/* Travel Map */
+.travel-map {
+    padding: 3rem 1rem;
+    background: #e9f3ff;
+    text-align: center;
+}
+
+.travel-map h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.world-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-pin {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff9f1a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events: auto; /* Ensure hover works precisely */
+}
+
+.map-pin:hover {
+    transform: scale(1.2);
+}
+
+.map-pin::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden; /* Ensures tooltip is completely hidden */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none; /* Prevent tooltip interference */
+}
+
+.map-pin:hover::after {
+    opacity: 1;
+    visibility: visible; /* Tooltip becomes visible on hover */
+}
+
+.map-container a {
+    text-decoration: none;
+}
+
+.map-container a .map-pin {
+    pointer-events: auto; /* Ensure the link works */
+}
+
+.map-container a:hover .map-pin {
+    transform: scale(1.2);
+}
+
